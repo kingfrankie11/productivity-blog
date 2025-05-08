@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join MindPulse™ Beta</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+        nav {
+            background: #1a252f; padding: 12px; text-align: center;
+        }
+        nav a {
+            color: white; margin: 0 15px; text-decoration: none; font-weight: bold;
+        }
+        nav a:hover { text-decoration: underline; }
+        .container {
+            max-width: 600px; margin: 40px auto; padding: 20px;
+            background: white; border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        input[type="text"], input[type="email"] {
+            width: 80%; padding: 10px; margin: 10px 0;
+            border: 1px solid #ccc; border-radius: 4px;
+        }
+        button {
+            padding: 12px 30px; background: #3498db; color: white;
+            border: none; border-radius: 5px; font-weight: bold;
+            cursor: pointer;
+        }
+        .message {
+            margin-top: 20px; color: green; display: none;
+        }
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+}
+
+nav {
+    background: #000;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    animation: fadeSlideUp 1s ease forwards;
+}
+
+@keyframes fadeSlideUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+p {
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+footer {
+    background: #000;
+    border-top: 1px solid rgba(0,255,255,0.3);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #f5f7fa, #dfe9f3);
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #4a6fa5;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container, .section {
+    background: white;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+    color: #3b4d61;
+}
+
+p {
+    color: #4d5c6a;
+    line-height: 1.7;
+}
+
+footer {
+    background: #4a6fa5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #f5f7fa, #dfe9f3);
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #4a6fa5;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.post {
+    margin-bottom: 40px;
+}
+
+.post h2 {
+    color: #3b4d61;
+}
+
+.post p {
+    color: #4d5c6a;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    background: #4a6fa5;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background: #4a6fa5;
+    color: white;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+</style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="join.html">Join Beta</a>
+        <a href="#">About</a>
+    </nav>
+    <div class="container">
+        <h1>Join the MindPulse™ Beta Program</h1>
+        <p>Be the first to access the AI-powered wellness tracker.</p>
+        <input type="text" placeholder="Your Name" id="name"><br>
+        <input type="email" placeholder="Your Email" id="email"><br>
+        <button onclick="submitForm()">Join Now</button>
+        <div class="message" id="message">🎉 Thank you for signing up!</div>
+    </div>
+
+    <footer>
+        &copy; 2025 MindPulse™ – A Concept Project by Francis Otchere
+    </footer>
+
+    <script>
+        function submitForm() {
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            if (name && email.includes('@')) {
+                document.getElementById('message').style.display = 'block';
+            } else {
+                alert("Please enter a valid name and email.");
+            }
+        }
+    </script>
+
+
+<!-- Chatbot UI -->
+<div id="chat-container" class="chat-container" style="display:none;">
+    <div class="chat-header">MindPulse™ AI Assistant</div>
+    <div class="chat-body" id="chat-body">
+        <div class="bot">Hi! I'm your MindPulse AI assistant. How can I support your wellness today?</div>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="chat-input-field" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+<style>
+    .chat-toggle {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px 18px;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+    .chat-container {
+        position: fixed;
+        bottom: 90px;
+        right: 25px;
+        width: 300px;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+    }
+    .chat-header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-weight: bold;
+    }
+    .chat-body {
+        padding: 10px;
+        height: 200px;
+        overflow-y: auto;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+    .chat-body .bot, .chat-body .user {
+        margin: 6px 0;
+        padding: 8px;
+        border-radius: 10px;
+        max-width: 85%;
+    }
+    .chat-body .bot {
+        background: #ecf0f1;
+        align-self: flex-start;
+    }
+    .chat-body .user {
+        background: #3498db;
+        color: white;
+        align-self: flex-end;
+    }
+    .chat-input {
+        display: flex;
+        border-top: 1px solid #ccc;
+    }
+    .chat-input input {
+        flex: 1;
+        padding: 8px;
+        border: none;
+        outline: none;
+    }
+    .chat-input button {
+        background: #3498db;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+}
+
+nav {
+    background: #000;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    animation: fadeSlideUp 1s ease forwards;
+}
+
+@keyframes fadeSlideUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+p {
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+footer {
+    background: #000;
+    border-top: 1px solid rgba(0,255,255,0.3);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #f5f7fa, #dfe9f3);
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #4a6fa5;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container, .section {
+    background: white;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+    color: #3b4d61;
+}
+
+p {
+    color: #4d5c6a;
+    line-height: 1.7;
+}
+
+footer {
+    background: #4a6fa5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #f5f7fa, #dfe9f3);
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #4a6fa5;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.post {
+    margin-bottom: 40px;
+}
+
+.post h2 {
+    color: #3b4d61;
+}
+
+.post p {
+    color: #4d5c6a;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    background: #4a6fa5;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background: #4a6fa5;
+    color: white;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+</style>
+
+<script>
+    function toggleChat() {
+        const chat = document.getElementById("chat-container");
+        chat.style.display = chat.style.display === "none" ? "flex" : "none";
+    }
+
+    function sendMessage() {
+        const inputField = document.getElementById("chat-input-field");
+        const msg = inputField.value.trim();
+        if (!msg) return;
+
+        const chatBody = document.getElementById("chat-body");
+
+        const userDiv = document.createElement("div");
+        userDiv.className = "user";
+        userDiv.textContent = msg;
+        chatBody.appendChild(userDiv);
+
+        inputField.value = "";
+        chatBody.scrollTop = chatBody.scrollHeight;
+
+        setTimeout(() => {
+            const botDiv = document.createElement("div");
+            botDiv.className = "bot";
+            botDiv.textContent = getBotReply(msg);
+            chatBody.appendChild(botDiv);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }, 800);
+    }
+
+    function getBotReply(input) {
+        const msg = input.toLowerCase();
+        if (msg.includes("hi") || msg.includes("hello")) {
+            return "Hi there! How are you feeling today? 😊";
+        }
+        if (msg.includes("sad") || msg.includes("down")) {
+            return "I'm here for you. Would you like a motivational quote or a short breathing exercise?";
+        }
+        if (msg.includes("happy") || msg.includes("good")) {
+            return "That's awesome! Want to track your mood or celebrate with a healthy tip?";
+        }
+        if (msg.includes("tired") || msg.includes("drained")) {
+            return "Try logging your energy and taking a 5-minute reset. Would you like a guided breathing tip?";
+        }
+        if (msg.includes("motivation") || msg.includes("quote")) {
+            return "🔥 'Small steps every day lead to big changes.' Keep going — you’ve got this!";
+        }
+        if (msg.includes("focus")) {
+            return "Want help logging your focus level or trying a Pomodoro technique?";
+        }
+        if (msg.includes("breath") || msg.includes("breathe")) {
+            return "Inhale deeply... 4 seconds. Hold... 4 seconds. Exhale... 4 seconds. Repeat for 3 cycles.";
+        }
+        if (msg.includes("track") || msg.includes("log")) {
+            return "Sure! What would you like to track — mood, energy, or focus?";
+        }
+        if (msg.includes("thank")) {
+            return "You're welcome! Anytime 💙";
+        }
+        return "I'm here to support your wellness journey. Ask me anything or try saying 'I'm tired' or 'I need motivation'.";
+    }
+</script>
+
+</body>
