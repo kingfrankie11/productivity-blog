@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Why I Built MindPulse™ | MindPulse™</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fdfdfd;
+      color: #2c3e50;
+      margin: 0;
+    }
+    nav {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #eaeaea;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #0fa4af;
+    }
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    p {
+      line-height: 1.7;
+      color: #555;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #0fa4af;
+      font-weight: bold;
+    }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 80px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="join.html">Join Beta</a>
+  <a href="about.html">About</a>
+</nav>
+
+<div class="container">
+  <h1>Why I Built MindPulse™</h1>
+  <p><em>Published: May 8, 2025 · By Francis Otchere</em></p>
+
+  <p>MindPulse™ didn’t start as a product idea. It started as a personal need. I was juggling work, school, side projects — all while trying to stay mentally grounded. But no matter what I accomplished, I often felt foggy, anxious, or out of sync. I wanted something to track the health of my mind, not just my body.</p>
+
+  <h2>Not Another Productivity App</h2>
+  <p>I didn’t want a to-do list. I wanted a mirror. Something that helped me notice patterns in my mood, focus, and energy. Something that gave me clarity without judgment. MindPulse™ is that mirror.</p>
+
+  <h2>A Tool for Awareness, Not Pressure</h2>
+  <p>Many apps gamify mental health — streaks, points, dopamine hits. I wanted to build something slower, calmer. A tool that says: “Here’s how you’re feeling. Let’s work with that.”</p>
+
+  <h2>Why I’m Sharing It</h2>
+  <p>This started as a solo project. But as I shared prototypes and ideas, I realized a lot of people felt the same way: tired of noise, craving balance. MindPulse™ became more than a tracker. It became a reminder to check in, not check out.</p>
+
+  <p>If this resonates with you, try the beta. Or just start tracking your focus and feelings, however works for you. The goal isn’t perfection — it’s presence.</p>
+
+  <a class="back-link" href="blog.html">← Back to Blog</a>
+</div>
+
+<footer>
+  &copy; 2025 MindPulse™ – A Concept Project by Francis Otchere
+</footer>
+
+<!-- Chatbot UI -->
+<div id="chat-container" class="chat-container" style="display:none;">
+    <div class="chat-header">MindPulse™ AI Assistant</div>
+    <div class="chat-body" id="chat-body">
+        <div class="bot">Hi! I'm your MindPulse AI assistant. How can I support your wellness today?</div>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="chat-input-field" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+<style>
+    .chat-toggle {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px 18px;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+    .chat-container {
+        position: fixed;
+        bottom: 90px;
+        right: 25px;
+        width: 300px;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+    }
+    .chat-header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-weight: bold;
+    }
+    .chat-body {
+        padding: 10px;
+        height: 200px;
+        overflow-y: auto;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+    .chat-body .bot, .chat-body .user {
+        margin: 6px 0;
+        padding: 8px;
+        border-radius: 10px;
+        max-width: 85%;
+    }
+    .chat-body .bot {
+        background: #ecf0f1;
+        align-self: flex-start;
+    }
+    .chat-body .user {
+        background: #3498db;
+        color: white;
+        align-self: flex-end;
+    }
+    .chat-input {
+        display: flex;
+        border-top: 1px solid #ccc;
+    }
+    .chat-input input {
+        flex: 1;
+        padding: 8px;
+        border: none;
+        outline: none;
+    }
+    .chat-input button {
+        background: #3498db;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function toggleChat() {
+        const chat = document.getElementById("chat-container");
+        chat.style.display = chat.style.display === "none" ? "flex" : "none";
+    }
+
+    function sendMessage() {
+        const inputField = document.getElementById("chat-input-field");
+        const msg = inputField.value.trim();
+        if (!msg) return;
+
+        const chatBody = document.getElementById("chat-body");
+
+        const userDiv = document.createElement("div");
+        userDiv.className = "user";
+        userDiv.textContent = msg;
+        chatBody.appendChild(userDiv);
+
+        inputField.value = "";
+        chatBody.scrollTop = chatBody.scrollHeight;
+
+        setTimeout(() => {
+            const botDiv = document.createElement("div");
+            botDiv.className = "bot";
+            botDiv.textContent = getBotReply(msg);
+            chatBody.appendChild(botDiv);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }, 800);
+    }
+
+    function getBotReply(input) {
+        const msg = input.toLowerCase();
+        if (msg.includes("hi") || msg.includes("hello")) {
+            return "Hi there! How are you feeling today? 😊";
+        }
+        if (msg.includes("sad") || msg.includes("down")) {
+            return "I'm here for you. Would you like a motivational quote or a short breathing exercise?";
+        }
+        if (msg.includes("happy") || msg.includes("good")) {
+            return "That's awesome! Want to track your mood or celebrate with a healthy tip?";
+        }
+        if (msg.includes("tired") || msg.includes("drained")) {
+            return "Try logging your energy and taking a 5-minute reset. Would you like a guided breathing tip?";
+        }
+        if (msg.includes("motivation") || msg.includes("quote")) {
+            return "🔥 'Small steps every day lead to big changes.' Keep going — you’ve got this!";
+        }
+        if (msg.includes("focus")) {
+            return "Want help logging your focus level or trying a Pomodoro technique?";
+        }
+        if (msg.includes("breath") || msg.includes("breathe")) {
+            return "Inhale deeply... 4 seconds. Hold... 4 seconds. Exhale... 4 seconds. Repeat for 3 cycles.";
+        }
+        if (msg.includes("track") || msg.includes("log")) {
+            return "Sure! What would you like to track — mood, energy, or focus?";
+        }
+        if (msg.includes("thank")) {
+            return "You're welcome! Anytime 💙";
+        }
+        return "I'm here to support your wellness journey. Ask me anything or try saying 'I'm tired' or 'I need motivation'.";
+    }
+</script>
+
+</body>
+</html>
